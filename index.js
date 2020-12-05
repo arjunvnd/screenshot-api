@@ -24,6 +24,7 @@ app.get("/api/screenshot", async (req, res) => {
     res.send(image);
   } catch (error) {
     console.log(error);
+    res.status(400).send(error)
   }
 });
 
