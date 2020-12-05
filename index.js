@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const puppeteer = require("puppeteer");
+const port=process.env.PORT||3001
+const path = require('path')
 
 app.use(express.static(path.join(__dirname, "build")));
 
@@ -23,6 +25,6 @@ app.get("/api/screenshot", async (req, res) => {
   }
 });
 
-var listener = app.listen(3000, function () {
-  console.log("Your app is listening on port " + listener.address().port);
+app.listen(port, () => {
+  console.log("App listning on port", port);
 });
