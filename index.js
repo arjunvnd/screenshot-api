@@ -14,7 +14,7 @@ app.get("/api/screenshot", async (req, res) => {
 
   const { weburi } = req.query;
   try {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
     const page = await browser.newPage();
     await page.goto(weburi);
     const image = await page.screenshot({ fullPage: true });
