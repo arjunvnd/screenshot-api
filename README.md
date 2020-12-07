@@ -2,7 +2,7 @@
 
 ## Simple appication for taking the screenshot of websites
 
-###Getting started
+### Getting started
 
 #### clone the project 
 
@@ -15,3 +15,7 @@ npm i
 #### Start the api
 
 npm start
+
+
+hosted at 
+https://screenshot-webapp.herokuapp.com/
