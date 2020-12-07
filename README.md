@@ -1,10 +1,10 @@
 # screenshot-api
 
-##Simple appication for taking the screenshot of websites
+## Simple appication for taking the screenshot of websites
 
 ###Getting started
 
-####clone the project 
+#### clone the project 
 
 git clone https://github.com/arjunvnd/screenshot-api.git
 
