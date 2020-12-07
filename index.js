@@ -19,8 +19,7 @@ app.get("/api/screenshot", async (req, res) => {
     await page.waitFor(500);
     await page.setDefaultNavigationTimeout(0);
 
-    await page.goto(weburi,{"waitUntil" : "networkidle0"});
-    await page.waitForNavigation()
+    await page.goto(weburi);
     if (width && height) await page.setViewport({width:Number(width),height:Number(height)});
     console.log('Taking the screenshot ')
     const image = await page.screenshot({ fullPage: true, type: imagetype });
